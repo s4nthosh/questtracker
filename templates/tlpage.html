@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+  <link rel="stylesheet" href="{% static 'css/Tlhome.css' %}">
+    <meta name="viewport" http-equiv="ScreenOrientation" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no,autoRotate:disabled"/>
+    <meta charset="UTF-8">
+    <title>Team-Leader</title>
+</head>
+<body>
+{% if not user.is_teamleader %}
+<img id="error" src="{% static 'images/404.png' %}" width="100%" height="100%" alt="">
+<a href="javascript:history.go(-1)">Back</a>
+{% endif %}
+{% if user.is_teamleader %}
+  <video src="{% static 'videos/main 1.mp4' %}" muted autoplay loop width="100%" height="100%"></video>
+    <div class="name-con">
+        <h1>Hey,{{request.user}}</h1>
+    </div>
+    <div class="menu-con">
+    <ul>
+      <li>
+          <a href="{% url 'tlhome'%}">Home</a>
+      </li>
+      <li>
+          <a href="{% url 'tlworkfilesupl' %}">Work-Files</a>
+      </li>
+      <li>
+          <a href="{% url 'logout-page' %}">Log-out</a>
+      </li>
+    </ul>
+  </div>
+
+    <div class="recived-container">
+
+
+    </div>
+    <div class="deadline-container">
+
+
+    </div>
+    <div class="status">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Files</th>
+                <th>Status</th>
+            </tr>
+            {% for i in totfile %}
+            <tr>
+                <td>
+                    {{i.Name}}
+                </td>
+                <td>
+                    <a href="{{i.Files.url}}" download="{{i.Files.url}}">{{i.Files}}</a>
+                </td>
+                <td>
+                {{i.Status}}
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+<div class="Project-complete">
+     <label>Total-Project-Complete</label>
+        <h1>{{complete}}</h1>
+
+</div>
+
+<div class="Progress-project">
+     <label>Progress-Project</label>
+        <h1>{{progress}}</h1>
+</div>
+<div class="Incomplete-project">
+     <label>Incomplete-Project</label>
+        <h1>{{pending}}</h1>
+</div>
+    <div class="Total-project">
+     <label>Total-Project</label>
+        <h1>{{total_projects}}</h1>
+</div>
+</div>
+{% endif %}
+</body>
+</html>

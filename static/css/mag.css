@@ -1,0 +1,641 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&family=Luxurious+Script&family=M+PLUS+1&family=Merienda&family=Noto+Nastaliq+Urdu&family=Overpass+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+body{
+  margin: 0;
+  overflow: hidden;
+  background-color: black;
+}
+.con{
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  margin: 0;
+  font-family:'Lexend Giga', sans-serif; ;
+  font-size: 20px;
+  color: #2D19AD;
+}
+.upload-details {
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  background-color: aliceblue;
+  margin: 0;
+  top:20%;
+  left: 15%;
+  border-radius: 10px;
+  box-shadow: 0 20px  18px rgba(0, 0, 0, 0.55);
+}
+label{
+  font-size:15px;
+  text-align:center;
+  display:flex;
+  font-family: 'Abril Fatface', cursive;
+  cursor: pointer;
+}
+.Incomplete-project h1 {
+  font-size:48px;
+  text-align:center;
+  font-family: 'Abril Fatface', cursive;
+  cursor: pointer;
+  color: white;
+  text-shadow: 0px 10px 6px rgba(0, 0, 0, 0.55);
+}
+.Total-project h1{
+  font-size:48px;
+  text-align:center;
+  color: white;
+  font-family: 'Abril Fatface', cursive;
+  cursor: pointer;
+  text-shadow: 0px 10px 6px rgba(0, 0, 0, 0.55);
+}
+.Project-complete h1{
+  font-size:48px;
+  text-align:center;
+  color: white;
+  font-family: 'Abril Fatface', cursive;
+  cursor: pointer;
+  text-shadow: 0px 10px 6px rgba(0, 0, 0, 0.55);
+}
+.Progress-project h1{
+  font-size:48px;
+  text-align:center;
+  color: white;
+  font-family: 'Abril Fatface', cursive;
+  cursor: pointer;
+  text-shadow: 0px 10px 6px rgba(0, 0, 0, 0.55);
+}
+h2{
+  font-size: 25px;
+  position: absolute;
+  font-family: 'Overpass Mono', monospace;
+  left: 30%;
+  top: -35px;
+  text-shadow: 0px 10px 6px rgba(0, 0, 0, 0.55);
+  cursor: pointer;
+
+}
+table{
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  left: 0%;
+  top:6%;
+}
+tr td{
+  padding: 30px 20px;
+  font-family: 'Overpass Mono', monospace;
+  font-size: 20px;
+  width: 40px;
+}
+
+.received-container{
+  width: 900px;
+  height: 200px;
+  position: absolute;
+  background-color: aliceblue;
+  margin: 0;
+  top:70%;
+  left: 35%;
+  border-radius: 10px;
+  box-shadow: 0 20px  18px rgba(0, 0, 0, 0.55) ;
+  overflow: scroll;
+}
+
+.table{
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top:6%;
+  font-family: 'Overpass Mono', monospace;
+  overflow: scroll;
+}
+
+
+.status-bar{
+  width: 850px;
+  height: 250px;
+  position: absolute;
+  background-color: white;
+  margin: 0;
+  top:60%;
+  left: 30%;
+  border-radius: 10px;
+  box-shadow: 0 20px  18px rgba(0, 0, 0, 0.55) ;
+}
+
+
+ul{
+  list-style-type: none;
+  margin: 5px;
+
+}
+#logout{
+  color: white;
+  top: 7px;
+  border-radius: 5px;
+  border: 2px solid #ff0000;
+  background: rgba(255, 0, 0, 0.64);
+  font-family: 'Abril Fatface', cursive;
+  left: 140px;
+  position: absolute;
+  text-decoration: none;
+}
+.menucon{
+  margin: 0;
+  position: absolute;
+  width: 300px;
+  height: 40px;
+  top: 30px;
+  left: 1620px;
+  background: rgba(0, 183, 241, 0.62);
+  border-radius: 5px;
+  border: 2px solid #00ffff;
+}
+h3{
+  text-align: left;
+  color: #020293;
+  margin: 10px;
+  font-family: 'Overpass Mono', monospace;
+}
+#back {
+    margin: 0;
+    position: absolute;
+    top: 63%;
+    left: 60%;
+    width: 66px;
+    height: 21px;
+    text-align: center;
+    border-radius: 5px;
+    background: #ffffff29;
+    border: 2px solid white;
+    color: wheat;
+    text-decoration: none;
+}
+.Project-complete{
+  width: 170px;
+  height: 160px;
+  position: absolute;
+  background-color: #00800094;
+  border: 2px solid #25af04;
+  margin: 0;
+  top:10%;
+  left: 10%;
+  border-radius: 7px;
+  box-shadow: -10px 10px  10px rgba(0, 0, 0, 0.55)  ;
+}
+
+.Progress-project{
+  width: 170px;
+  height: 160px;
+  position: absolute;
+  background-color: #ffff0094;
+  border: 2px solid #d1df01;
+  margin: 0;
+  top:10%;
+  left: 30%;
+  border-radius: 10px;
+  box-shadow: -10px 10px  10px rgba(0, 0, 0, 0.55)  ;
+}
+
+.Incomplete-project{
+  width: 170px;
+  height: 160px;
+  position: absolute;
+  background-color: #ff000094;
+  border: 2px solid red;
+  margin: 0;
+  top:10%;
+  left: 50%;
+  border-radius: 10px;
+  box-shadow: -10px 10px  10px rgba(0, 0, 0, 0.55)  ;
+}
+.Total-project{
+  width: 170px;
+  height: 160px;
+  position: absolute;
+  background-color: rgba(255, 98, 0, 0.58);
+  border: 2px solid #ff5100;
+  margin: 0;
+  top:10%;
+  left: 70%;
+  border-radius: 10px;
+  box-shadow: -10px 10px  10px rgba(0, 0, 0, 0.55)  ;
+
+}
+
+td a {
+  background: rgba(0, 0, 255, 0.49);
+  width: 120px;
+  height: 40px;
+  font-size: 15px;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #00B7F1;
+  border-radius: 5px;
+  box-shadow: -10px 10px  10px rgba(0, 0, 0, 0.55)  ;
+}
+
+#error{
+  width:100%;
+  height:1000px;
+}
+
+/*mobile*/
+@media only screen
+and (min-width: 320px)
+and (max-width: 999px)
+{
+body{
+  margin: 0;
+  overflow: hidden;
+  background-color: black;
+}
+img{
+  width:1700px;
+  overflow:hidden;
+  left:-90%;
+  position:absolute;
+}
+.upload-details {
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  background-color: aliceblue;
+  margin: 0;
+  top:20%;
+  left: 15%;
+  border-radius: 10px;
+  box-shadow: 0 20px  18px rgba(0, 0, 0, 0.55);
+}
+label{
+  font-size:10px;
+  text-align:center;
+  display:flex;
+  font-family: 'Abril Fatface', cursive;
+  cursor: pointer;
+}
+.Incomplete-project h1 {
+  font-size:28px;
+  text-align:center;
+  font-family: 'Abril Fatface', cursive;
+  cursor: pointer;
+  color: white;
+  text-shadow: 0px 10px 6px rgba(0, 0, 0, 0.55);
+}
+.Total-project h1{
+  font-size:28px;
+  text-align:center;
+  color: white;
+  font-family: 'Abril Fatface', cursive;
+  cursor: pointer;
+  text-shadow: 0px 10px 6px rgba(0, 0, 0, 0.55);
+}
+.Project-complete h1{
+  font-size:28px;
+  text-align:center;
+  color: white;
+  font-family: 'Abril Fatface', cursive;
+  cursor: pointer;
+  text-shadow: 0px 10px 6px rgba(0, 0, 0, 0.55);
+}
+.Progress-project h1{
+  font-size:28px;
+  text-align:center;
+  color: white;
+  font-family: 'Abril Fatface', cursive;
+  cursor: pointer;
+  text-shadow: 0px 10px 6px rgba(0, 0, 0, 0.55);
+}
+  label{
+  font-size:9px;
+  text-align:center;
+  display:flex;
+  font-family: 'Abril Fatface', cursive;
+  cursor: pointer;
+}
+h2{
+  font-size: 15px;
+  position: absolute;
+  font-family: 'Overpass Mono', monospace;
+  left: 30%;
+  top: -35px;
+  text-shadow: 0px 10px 6px rgba(0, 0, 0, 0.55);
+  cursor: pointer;
+
+}
+table{
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  left: 0%;
+  top:6%;
+  font-size:15px;
+}
+tr td{
+  padding: 30px 20px;
+  font-family: 'Overpass Mono', monospace;
+  font-size: 15px;
+  width: 40px;
+}
+
+.received-container{
+  width: 340px;
+  height: 250px;
+  position: absolute;
+  background-color: aliceblue;
+  margin: 0;
+  top:50%;
+  left: 5%;
+  border-radius: 10px;
+  box-shadow: 0 20px  18px rgba(0, 0, 0, 0.55) ;
+  overflow: scroll;
+}
+
+.table{
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top:6%;
+  font-family: 'Overpass Mono', monospace;
+  overflow: scroll;
+}
+
+
+.status-bar{
+  width: 850px;
+  height: 250px;
+  position: absolute;
+  background-color: white;
+  margin: 0;
+  top:60%;
+  left: 30%;
+  border-radius: 10px;
+  box-shadow: 0 20px  18px rgba(0, 0, 0, 0.55) ;
+}
+
+
+ul{
+  list-style-type: none;
+  margin: 5px;
+
+}
+#logout{
+  color: white;
+  top: 0px;
+  border-radius: 5px;
+  border: 2px solid #ff0000;
+  background: rgba(255, 0, 0, 0.64);
+  font-family: 'Abril Fatface', cursive;
+  left: 310px;
+  font-size:10px;
+  display:flex;
+  position: absolute;
+  text-decoration: none;
+}
+.menucon{
+  margin: 0;
+  position: absolute;
+  width: 800px;
+  height: 20px;
+  top: 10px;
+  left: 0px;
+  background: rgb(0 0 0 / 62%);
+  border-radius: 5px;
+  border: 2px solid #00ffff;
+}
+h3{
+  text-align: left;
+  color: #29db6b;
+  margin: 5px;
+  font-family: 'Overpass Mono', monospace;
+  font-size:13px;
+}
+#back {
+    margin: 0;
+    position: absolute;
+    top: 63%;
+    left: 60%;
+    width: 66px;
+    height: 21px;
+    text-align: center;
+    border-radius: 5px;
+    background: #ffffff29;
+    border: 2px solid white;
+    color: wheat;
+    text-decoration: none;
+}
+.Project-complete{
+  width: 100px;
+  height: 80px;
+  position: absolute;
+  background-color: #00800094;
+  border: 2px solid #25af04;
+  margin: 0;
+  top:10%;
+  left: 10%;
+  border-radius: 7px;
+  box-shadow: -10px 10px  10px rgba(0, 0, 0, 0.55)  ;
+}
+
+.Progress-project{
+  width: 100px;
+  height: 80px;
+  position: absolute;
+  background-color: #ffff0094;
+  border: 2px solid #d1df01;
+  margin: 0;
+  top:10%;
+  left: 65%;
+  border-radius: 10px;
+  box-shadow: -10px 10px  10px rgba(0, 0, 0, 0.55)  ;
+}
+
+.Incomplete-project{
+  width: 100px;
+  height: 80px;
+  position: absolute;
+  background-color: #ff000094;
+  border: 2px solid red;
+  margin: 0;
+  top:25%;
+  left: 10%;
+  border-radius: 10px;
+  box-shadow: -10px 10px  10px rgba(0, 0, 0, 0.55)  ;
+}
+.Total-project{
+  width: 100px;
+  height: 80px;
+  position: absolute;
+  background-color: rgba(255, 98, 0, 0.58);
+  border: 2px solid #ff5100;
+  margin: 0;
+  top:25%;
+  left: 65%;
+  border-radius: 10px;
+  box-shadow: -10px 10px  10px rgba(0, 0, 0, 0.55)  ;
+
+}
+
+td a {
+  background: rgba(0, 0, 255, 0.49);
+  width: 120px;
+  height: 40px;
+  font-size: 10px;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #00B7F1;
+  border-radius: 5px;
+  box-shadow: -10px 10px  10px rgba(0, 0, 0, 0.55)  ;
+}
+
+#error{
+  width:100%;
+  height:1000px;
+}
+}
+
+
+/*small screen*/
+@media only screen
+and (min-width: 1030px)
+and (max-width: 1366px) {
+  #error {
+    width: 1366px;
+    height:800px;
+  }
+    #back {
+    margin: 0;
+    position: absolute;
+    top: 83%;
+    left: 60%;
+    width: 66px;
+    height: 21px;
+    text-align: center;
+    border-radius: 5px;
+    background: #ffffff29;
+    border: 2px solid white;
+    color: wheat;
+    text-decoration: none;
+}
+.received-container{
+  width: 850px;
+  height: 150px;
+  position: absolute;
+  background-color: aliceblue;
+  margin: 0;
+  top:70%;
+  left: 30%;
+  border-radius: 10px;
+  box-shadow: 0 20px  18px rgba(0, 0, 0, 0.55) ;
+  overflow: scroll;
+}
+.Project-complete{
+  width: 170px;
+  height: 160px;
+  position: absolute;
+  background-color: #00800094;
+  border: 2px solid #25af04;
+  margin: 0;
+  top:15%;
+  left: 10%;
+  border-radius: 7px;
+  box-shadow: -10px 10px  10px rgba(0, 0, 0, 0.55)  ;
+}
+
+.Progress-project{
+  width: 170px;
+  height: 160px;
+  position: absolute;
+  background-color: #ffff0094;
+  border: 2px solid #d1df01;
+  margin: 0;
+  top:15%;
+  left: 30%;
+  border-radius: 10px;
+  box-shadow: -10px 10px  10px rgba(0, 0, 0, 0.55)  ;
+}
+
+.Incomplete-project{
+  width: 170px;
+  height: 160px;
+  position: absolute;
+  background-color: #ff000094;
+  border: 2px solid red;
+  margin: 0;
+  top:15%;
+  left: 50%;
+  border-radius: 10px;
+  box-shadow: -10px 10px  10px rgba(0, 0, 0, 0.55)  ;
+}
+.Total-project{
+  width: 170px;
+  height: 160px;
+  position: absolute;
+  background-color: rgba(255, 98, 0, 0.58);
+  border: 2px solid #ff5100;
+  margin: 0;
+  top:15%;
+  left: 70%;
+  border-radius: 10px;
+  box-shadow: -10px 10px  10px rgba(0, 0, 0, 0.55)  ;
+
+}
+  .menucon{
+  margin: 0;
+  position: absolute;
+  width: 300px;
+  height: 40px;
+  top: 25px;
+  left:80%;
+  background: rgba(0, 183, 241, 0.62);
+  border-radius: 5px;
+  border: 2px solid #00ffff;
+}
+  label{
+  font-size:15px;
+  text-align:center;
+  display:flex;
+  font-family: 'Abril Fatface', cursive;
+  cursor: pointer;
+}
+.Incomplete-project h1 {
+  font-size:48px;
+  text-align:center;
+  font-family: 'Abril Fatface', cursive;
+  cursor: pointer;
+  color: white;
+  text-shadow: 0px 10px 6px rgba(0, 0, 0, 0.55);
+}
+.Total-project h1{
+  font-size:48px;
+  text-align:center;
+  color: white;
+  font-family: 'Abril Fatface', cursive;
+  cursor: pointer;
+  text-shadow: 0px 10px 6px rgba(0, 0, 0, 0.55);
+}
+.Project-complete h1{
+  font-size:48px;
+  text-align:center;
+  color: white;
+  font-family: 'Abril Fatface', cursive;
+  cursor: pointer;
+  text-shadow: 0px 10px 6px rgba(0, 0, 0, 0.55);
+}
+.Progress-project h1{
+  font-size:48px;
+  text-align:center;
+  color: white;
+  font-family: 'Abril Fatface', cursive;
+  cursor: pointer;
+  text-shadow: 0px 10px 6px rgba(0, 0, 0, 0.55);
+}
+}
+

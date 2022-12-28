@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% static 'css/Tlhome.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no"/>
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    <meta charset="UTF-8">
+    <title>UPLOAD FILE PAGE</title>
+</head>
+<body>
+{% if not user.is_teamleader %}
+<img id="error" src="{% static 'images/404.png' %}" width="100%" height="100%" alt="">
+<a href="javascript:history.go(-1)">Back</a>
+{% endif %}
+{% if user.is_teamleader %}
+<video src="{% static 'videos/upload.mp4' %}" muted autoplay loop width="100%" height="100%"></video>
+
+ <div class="menu-con">
+  <ul>
+      <li>
+          <a href="{% url 'tlhome' %}">Home</a>
+      </li>
+      <li>
+          <a href="{% url 'tlworkfilesupl' %}">Work-Files</a>
+      </li>
+      <li>
+          <a href="{% url 'logout-page' %}">Log-out</a>
+      </li>
+  </ul>
+ </div>
+
+  <div class="upload-details">
+
+       <h2>Upload-files</h2>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <table>
+            <tr>
+                <td>
+                    <label>Name</label>
+                </td>
+                <td>
+                    <input type="text" name="name" autocomplete="off" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Designation</label>
+                </td>
+                <td>
+                    <input type="text" name="designation" autocomplete="off" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>File-upload</label>
+                </td>
+                <td>
+                    <input type="file" name="files">
+                </td>
+            <tr>
+                <td>
+                    <label>Department</label>
+                </td>
+                <td>
+                    <select name="department">
+                        <option value="manager">MANAGER</option>
+                        <option value="employer">EMPLOYER</option>
+                    </select>
+                </td>
+            </tr>
+                <td>
+                    <button type="submit" >UPLOAD</button>
+                </td>
+            </tr>
+        </table>
+
+    </form>
+  </div>
+{% endif %}
+</body>
+</html>

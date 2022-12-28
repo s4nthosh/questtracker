@@ -1,0 +1,691 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&family=Luxurious+Script&family=M+PLUS+1&family=Merienda&family=Noto+Nastaliq+Urdu&family=Overpass+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+body{
+  margin: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+h1{
+  text-align: center;
+  font-family: 'Overpass Mono', monospace;
+  color: red;
+  font-size: 15px;
+
+}
+
+.menu-con{
+  position: absolute;
+  width: 500px;
+  height: 35px;
+  top:15px;
+  background-color: white;
+  border-radius: 10px;
+  left:38%;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+ul{
+  list-style-type: none;
+  margin: 5px;
+
+}
+
+li{
+  display: inline;
+  padding-left: 50px;
+
+
+}
+
+li a{
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Overpass Mono', monospace;
+  color: black;
+  padding: 10px 7px;
+}
+
+li a:hover{
+  color: green;
+}
+
+/*tluploadpage */
+
+.upload-details {
+  width: 50%;
+  height: 60%;
+  position: absolute;
+  background-color: #f0f8ff87;
+  margin: 0;
+  top: 20%;
+  left: 25%;
+  border-radius: 10px;
+  border: 5px solid white;
+  box-shadow: 0 20px 18px rgb(0 0 0 / 55%);
+}
+h2{
+  font-size: 25px;
+  position: absolute;
+  font-family: 'Overpass Mono', monospace;
+  left: 40%;
+  text-shadow: 0 10px 6px rgba(0, 0, 0, 0.55);
+
+}
+table{
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  left: 32%;
+  top:5%;
+  overflow: scroll;
+}
+video{
+  display: flex;
+}
+tr td{
+  padding: 40px 30px;
+  font-family: 'Overpass Mono', monospace;
+  font-size: 25px;
+  width: 50px;
+}
+button {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    top: 85%;
+    right: 50%;
+    background-color: aqua;
+    font-family: 'Overpass Mono', monospace;
+    color: white;
+    border: none;
+    border-radius: 25px 0 25px 0;
+    box-shadow: 0 20px 18px rgb(0 0 0 / 55%);
+}
+
+button:hover{
+  background-color: red;
+}
+.name-con{
+  width:100px;
+  height:40px;
+  background:#00ffff26;
+  position:absolute;
+  top:10px;
+  left:90%;
+  border-radius: 5px;
+  border: 2px solid aqua;
+}
+.status {
+    width: 850px;
+    height: 250px;
+    position: absolute;
+    background-color: white;
+    margin: 0;
+    top: 72%;
+    left: 30%;
+    border-radius: 10px;
+    box-shadow: 0 20px 18px rgb(0 0 0 / 55%);
+  overflow: scroll;
+}
+
+.Project-complete{
+  width: 180px;
+  height: 170px;
+  position: absolute;
+  background-color: #00800094;
+  border: 2px solid #25af04;
+  margin: 0;
+  top:15%;
+  left: 10%;
+  border-radius: 7px;
+  box-shadow: -10px 10px  10px rgba(0, 0, 0, 0.55)  ;
+}
+td a {
+  background: rgba(0, 0, 255, 0.49);
+  width: 120px;
+  height: 40px;
+  font-size: 15px;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #00B7F1;
+  border-radius: 5px;
+  box-shadow: -10px 10px  10px rgba(0, 0, 0, 0.55)  ;
+}
+
+.Progress-project{
+  width: 180px;
+  height: 170px;
+  position: absolute;
+  background-color: #ffff0094;
+  border: 2px solid #d1df01;
+  margin: 0;
+  top:15%;
+  left: 30%;
+  border-radius: 10px;
+  box-shadow: -10px 10px  10px rgba(0, 0, 0, 0.55)  ;
+}
+
+.Incomplete-project{
+  width: 180px;
+  height: 170px;
+  position: absolute;
+  background-color: #ff000094;
+  border: 2px solid red;
+  margin: 0;
+  top:15%;
+  left: 50%;
+  border-radius: 10px;
+  box-shadow: -10px 10px  10px rgba(0, 0, 0, 0.55)  ;
+}
+.Total-project{
+  width: 180px;
+  height: 170px;
+  position: absolute;
+  background-color: rgba(255, 98, 0, 0.58);
+  border: 2px solid #ff5100;
+  margin: 0;
+  top:15%;
+  left: 70%;
+  border-radius: 10px;
+  box-shadow: -10px 10px  10px rgba(0, 0, 0, 0.55)  ;
+
+}
+label{
+  font-size:15px;
+  text-align:center;
+  display:flex;
+  font-family: 'Abril Fatface', cursive;
+  cursor: pointer;
+}
+.Incomplete-project h1 {
+  font-size:48px;
+  text-align:center;
+  font-family: 'Abril Fatface', cursive;
+  cursor: pointer;
+  color: white;
+  text-shadow: 0 10px 6px rgba(0, 0, 0, 0.55);
+}
+.Total-project h1{
+  font-size:48px;
+  text-align:center;
+  color: white;
+  font-family: 'Abril Fatface', cursive;
+  cursor: pointer;
+  text-shadow: 0 10px 6px rgba(0, 0, 0, 0.55);
+}
+.Project-complete h1{
+  font-size:48px;
+  text-align:center;
+  color: white;
+  font-family: 'Abril Fatface', cursive;
+  cursor: pointer;
+  text-shadow: 0 10px 6px rgba(0, 0, 0, 0.55);
+}
+.Progress-project h1{
+  font-size:48px;
+  text-align:center;
+  color: white;
+  font-family: 'Abril Fatface', cursive;
+  cursor: pointer;
+  text-shadow: 0 10px 6px rgba(0, 0, 0, 0.55);
+}
+
+
+/*mobile*/
+@media only screen
+and (min-width: 320px)
+and (max-width: 999px)
+{
+   body{
+  margin: 0;
+  overflow: scroll;
+  background-color: black;
+}
+
+h1{
+  text-align:center;
+  font-family: 'Overpass Mono', monospace;
+  color: red;
+  font-size: 10px;
+
+}
+
+.menu-con{
+  position: fixed;
+  width: 450px;
+  height: 35px;
+  top:93%;
+  background-color: white;
+  border-radius: 10px;
+  left:0;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+ul{
+  list-style-type: none;
+  margin: 8px;
+
+}
+
+li{
+  display: inline;
+  padding-left: 20px;
+
+
+}
+
+li a{
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Overpass Mono', monospace;
+  color: black;
+  padding: 10px 7px;
+}
+
+li a:hover{
+  color: green;
+}
+
+/*tluploadpage */
+
+.upload-details {
+  width: 69%;
+  height: 50%;
+  position: absolute;
+  background-color: #f0f8ff87;
+  margin: 0;
+  top: 20%;
+  left: 15%;
+  border-radius: 10px;
+  border: 5px solid white;
+  box-shadow: 0 20px 18px rgb(0 0 0 / 55%);
+}
+h2{
+  font-size: 15px;
+  position: absolute;
+  font-family: 'Overpass Mono', monospace;
+  left: 40%;
+  text-shadow: 0px 10px 6px rgba(0, 0, 0, 0.55);
+
+}
+table{
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top:15%;
+  overflow: scroll;
+}
+video{
+   min-width: 300px;
+   max-width: 1800px;
+   position:absolute;
+   top:0;
+
+}
+tr td{
+  padding: 20px 10px;
+  font-family: 'Overpass Mono', monospace;
+  font-size: 10px;
+}
+  input{
+    width:150px;
+    display:flex;
+    font-size:11px;
+  }
+button {
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    top: 89%;
+    right: 35%;
+    background-color: aqua;
+    font-family: 'Overpass Mono', monospace;
+    color: white;
+    border: none;
+    border-radius: 25px 0 25px 0;
+    box-shadow: 0 20px 18px rgb(0 0 0 / 55%);
+}
+
+button:hover{
+  background-color: red;
+}
+.name-con{
+  width:100px;
+  height:25px;
+  background:#00ffff26;
+  position:absolute;
+  top:0;
+  left:0;
+  border-radius: 5px;
+  border: 2px solid aqua;
+}
+.status {
+    width: 340px;
+    height: 250px;
+    position: absolute;
+    background-color: white;
+    margin: 0;
+    top: 51%;
+    left: 2%;
+    border-radius: 10px;
+    box-shadow: 0 20px 18px rgb(0 0 0 / 55%);
+    overflow: scroll;
+}
+
+.Project-complete{
+  width: 100px;
+  height: 80px;
+  position: absolute;
+  background-color: #00800094;
+  border: 2px solid #25af04;
+  margin: 0;
+  top:15%;
+  left: 10%;
+  border-radius: 7px;
+  box-shadow: -10px 10px  10px rgba(0, 0, 0, 0.55)  ;
+}
+td a {
+  background: rgba(0, 0, 255, 0.49);
+  width: 120px;
+  height: 40px;
+  font-size: 10px;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #00B7F1;
+  border-radius: 5px;
+  box-shadow: -10px 10px  10px rgba(0, 0, 0, 0.55)  ;
+}
+
+.Progress-project{
+  width: 100px;
+  height: 80px;
+  position: absolute;
+  background-color: #ffff0094;
+  border: 2px solid #d1df01;
+  margin: 0;
+  top:15%;
+  left: 60%;
+  border-radius: 10px;
+  box-shadow: -10px 10px  10px rgba(0, 0, 0, 0.55)  ;
+}
+
+.Incomplete-project{
+  width: 100px;
+  height:80px;
+  position: absolute;
+  background-color: #ff000094;
+  border: 2px solid red;
+  margin: 0;
+  top:35%;
+  left: 10%;
+  border-radius: 10px;
+  box-shadow: -10px 10px  10px rgba(0, 0, 0, 0.55)  ;
+}
+.Total-project{
+  width: 100px;
+  height: 80px;
+  position: absolute;
+  background-color: rgba(255, 98, 0, 0.58);
+  border: 2px solid #ff5100;
+  margin: 0;
+  top:35%;
+  left: 60%;
+  border-radius: 10px;
+  box-shadow: -10px 10px  10px rgba(0, 0, 0, 0.55)  ;
+
+}
+label{
+  font-size:9px;
+  text-align:center;
+  display:flex;
+  font-family: 'Abril Fatface', cursive;
+  cursor: pointer;
+}
+.Incomplete-project h1 {
+  font-size:28px;
+  text-align:center;
+  font-family: 'Abril Fatface', cursive;
+  cursor: pointer;
+  color: white;
+  text-shadow: 0px 10px 6px rgba(0, 0, 0, 0.55);
+}
+.Total-project h1{
+  font-size:28px;
+  text-align:center;
+  color: white;
+  font-family: 'Abril Fatface', cursive;
+  cursor: pointer;
+  text-shadow: 0 10px 6px rgba(0, 0, 0, 0.55);
+}
+.Project-complete h1{
+  font-size:28px;
+  text-align:center;
+  color: white;
+  font-family: 'Abril Fatface', cursive;
+  cursor: pointer;
+  text-shadow: 0 10px 6px rgba(0, 0, 0, 0.55);
+}
+.Progress-project h1{
+  font-size:28px;
+  text-align:center;
+  color: white;
+  font-family: 'Abril Fatface', cursive;
+  cursor: pointer;
+  text-shadow: 0 10px 6px rgba(0, 0, 0, 0.55);
+
+}
+
+}
+
+
+
+/*small screen */
+@media only screen
+and (min-width: 1030px)
+and (max-width: 1366px) {
+    .name-con{
+  width:100px;
+  height:30px;
+  background:#00ffff26;
+  position:absolute;
+  top:10px;
+  left:90%;
+  border-radius: 5px;
+  border: 2px solid #00ffff;
+
+}
+  #error{
+    width: 1366px;
+    height:800px;
+}
+  .Project-complete{
+  width: 170px;
+  height: 160px;
+  position: absolute;
+  background-color: #00800094;
+  border: 2px solid #25af04;
+  margin: 0;
+  top:15%;
+  left: 10%;
+  border-radius: 7px;
+  box-shadow: -10px 10px  10px rgba(0, 0, 0, 0.55)  ;
+}
+
+.Progress-project{
+  width: 170px;
+  height: 160px;
+  position: absolute;
+  background-color: #ffff0094;
+  border: 2px solid #d1df01;
+  margin: 0;
+  top:15%;
+  left: 30%;
+  border-radius: 10px;
+  box-shadow: -10px 10px  10px rgba(0, 0, 0, 0.55)  ;
+}
+
+.Incomplete-project{
+  width: 170px;
+  height: 160px;
+  position: absolute;
+  background-color: #ff000094;
+  border: 2px solid red;
+  margin: 0;
+  top:15%;
+  left: 50%;
+  border-radius: 10px;
+  box-shadow: -10px 10px  10px rgba(0, 0, 0, 0.55)  ;
+}
+.Total-project{
+  width: 170px;
+  height: 160px;
+  position: absolute;
+  background-color: rgba(255, 98, 0, 0.58);
+  border: 2px solid #ff5100;
+  margin: 0;
+  top:15%;
+  left: 70%;
+  border-radius: 10px;
+  box-shadow: -10px 10px  10px rgba(0, 0, 0, 0.55)  ;
+
+}
+  h1{
+  font-family: 'Overpass Mono', monospace;
+  color: red;
+  font-size: 13px;
+
+}
+    .menu-con{
+  position: absolute;
+  width: 500px;
+  height: 35px;
+  top:15px;
+  background-color: white;
+  border-radius: 10px;
+  left:35%;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.25);
+}
+  .status {
+    width: 650px;
+    height: 150px;
+    position: absolute;
+    background-color: white;
+    margin: 0;
+    top: 72%;
+    left: 30%;
+    border-radius: 10px;
+    box-shadow: 0 20px 18px rgb(0 0 0 / 55%);
+}
+  ul{
+  list-style-type: none;
+  margin: 5px;
+
+}
+
+li{
+  display: inline;
+  padding-left: 50px;
+
+
+}
+
+li a{
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Overpass Mono', monospace;
+  color: black;
+  font-size:15px;
+  padding: 10px 7px;
+}
+
+li a:hover{
+  color: green;
+}
+  .status {
+    width: 850px;
+    height: 150px;
+    position: absolute;
+    background-color: #ffffffb8;
+    margin: 0;
+    top: 72%;
+    left: 20%;
+    border:2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 20px 18px rgb(0 0 0 / 55%);
+    overflow:scroll;
+
+}
+  .status table{
+    position:absolute;
+    left:5px;
+
+  }
+    .upload-details {
+  width: 50%;
+  height: 60%;
+  position: absolute;
+  background-color: #f0f8ff87;
+  margin: 0;
+  top: 20%;
+  left: 25%;
+  border-radius: 10px;
+  border: 5px solid white;
+  box-shadow: 0px 20px 18px rgb(0 0 0 / 55%);
+}
+  h2{
+  font-size: 20px;
+  position: absolute;
+  font-family: 'Overpass Mono', monospace;
+  left: 40%;
+  margin:2px;
+  text-shadow: 0px 10px 6px rgba(0, 0, 0, 0.55);
+
+}
+table{
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  left: 22%;
+  top:0%;
+}
+tr td{
+  padding: 30px 30px;
+  font-family: 'Overpass Mono', monospace;
+  font-size: 20px;
+  width: 50px;
+}
+button {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    top: 85%;
+    right: 50%;
+    background-color: aqua;
+    font-family: 'Overpass Mono', monospace;
+    color: white;
+    border: none;
+    border-radius: 25px 0 25px 0;
+    box-shadow: 0px 20px 18px rgb(0 0 0 / 55%);
+}
+td a{
+  background: rgba(0, 0, 255, 0.49);
+  width: 120px;
+  height: 40px;
+  font-size: 15px;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #00B7F1;
+  border-radius: 5px;
+  box-shadow: -10px 10px  10px rgba(0, 0, 0, 0.55) ;
+}
+
+}

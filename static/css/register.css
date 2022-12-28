@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&family=Luxurious+Script&family=M+PLUS+1&family=Merienda&family=Noto+Nastaliq+Urdu&family=Overpass+Mono&display=swap');
+body{
+  margin: 0;
+  background-color: black;
+  overflow: hidden;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  overflow: hidden;
+}
+.signup-container {
+    width: 450px;
+    height: 600px;
+    background-color: rgba(150, 152, 153, 0.6);
+    position: absolute;
+    border: 5px solid rgba(0, 170, 255, 0.3);
+    top: 20%;
+    left: 40%;
+    backdrop-filter: blur(4px);
+}
+
+form{
+    position:relative;
+    width:80%
+
+}
+.login {
+    position: relative;
+    top: 5%;
+    left: 20%;
+}
+.login label{
+   position:absolute;
+   height:0;
+   width:60%;
+   top:-5px;
+   display:block;
+   color:black;
+   margin-left:0;
+   font-family: 'Overpass Mono', monospace;
+}
+a {
+    position: absolute;
+    bottom: -44px;
+    background-color: rgba(217, 217, 217, 0);
+    box-shadow: none;
+    font-family: 'Overpass Mono', monospace;
+    font-size: 15px;
+    color: red;
+    left: 45%;
+}
+
+h1{
+  font-family: 'Overpass Mono', monospace;
+  font-size: 30px;
+  color: #2D19AD;
+
+  position: absolute;
+  top: -5%;
+  left: 35%;
+  text-shadow: 0px 10px 10px rgba(0, 0, 0, 1.55);
+}
+
+label {
+    top: 90px;
+    position: relative;
+    display: flex;
+    margin: 30px;
+    font-family: 'Overpass Mono', monospace;
+    font-size: 15px;
+    color: #2446BF;
+}
+input{
+  background-color: #70D6DD;
+  float: right;
+  clear:both;
+  outline:none;
+  margin:0px 0px;
+  padding:15px 0px;
+  width:80%;
+  height: 0px;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius:10px;
+  display: block;
+  left: 20%;
+  top:30px;
+  position:relative;
+  box-shadow: 0px 10px rgba(0, 0, 0, 0.25)
+
+}
+
+button {
+    margin-top: 88px;
+    background-color: red;
+    border: none;
+    position: relative;
+    left: 50%;
+    font-family: 'Overpass Mono', monospace;
+    color: white;
+    width: 30%;
+    height: 50px;
+    box-shadow: -5px 5px rgb(0 0 0 / 55%);
+    border-radius: 0px 5px 0 5px;
+}
+
+
+#id_is_teamleader {
+    width: 50px;
+    height: 20px;
+    box-shadow: none;
+}
+#id_is_manager {
+    width: 50px;
+    height: 20px;
+    box-shadow: none;
+}
+#id_is_employer {
+    width: 50px;
+    height: 20px;
+    box-shadow: none;
+}
+h2{
+  font-size: 15px;
+  color: red;
+  position: absolute;
+  top: 80%;
+  left: 30%;
+}
+
+
+/*mobile*/
+@media only screen
+and (min-width: 320px)
+and (max-width: 999px)
+{
+    body{
+  margin: 0;
+  background-color: black;
+  overflow: hidden;
+}
+.container{
+  width: 1020%;
+  height: 100%;
+  background-color: white;
+  overflow: hidden;
+}
+.video{
+    min-width: 300px;
+    max-width: 1800px;
+    overflow: hidden;
+}
+.signup-container {
+    width: 330px;
+    height: 500px;
+    background-color: rgba(150, 152, 153, 0.6);
+    position: absolute;
+    border: 5px solid rgba(0, 170, 255, 0.3);
+    top: 20%;
+    left: 5%;
+    backdrop-filter: blur(4px);
+}
+
+form{
+    position:relative;
+    width:80%
+
+}
+.login {
+    position: relative;
+    top: 5%;
+    left: 20%;
+}
+.login label{
+   position:absolute;
+   height:0;
+   width:60%;
+   top:-20px;
+   display:block;
+   color:black;
+   margin-left:0;
+   font-family: 'Overpass Mono', monospace;
+}
+a {
+    position: absolute;
+    bottom: -22.5px;
+    background-color: rgba(217, 217, 217, 0);
+    box-shadow: none;
+    font-family: 'Overpass Mono', monospace;
+    font-size: 10px;
+    color: red;
+    left: 40%;
+}
+
+h1{
+  font-family: 'Overpass Mono', monospace;
+  font-size: 15px;
+  color: #2D19AD;
+
+  position: absolute;
+  top: -5%;
+  left: 45%;
+  text-shadow: 0px 10px 10px rgba(0, 0, 0, 1.55);
+}
+
+label {
+    top: 30px;
+    position: relative;
+    display: flex;
+    margin: 30px;
+    font-family: 'Overpass Mono', monospace;
+    font-size: 10px;
+    color: #2446BF;
+}
+input{
+  background-color: #70D6DD;
+  float: right;
+  clear:both;
+  outline:none;
+  margin:0px 0px;
+  padding:15px 10px;
+  width:100%;
+  height: 0px;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius:10px;
+  display: block;
+  left: 20%;
+  top:10px;
+  position:relative;
+  box-shadow: 0px 10px rgba(0, 0, 0, 0.25)
+
+}
+
+button {
+    margin-top: 25px;
+    background-color: red;
+    border: none;
+    position: relative;
+    left: 50%;
+    font-family: 'Overpass Mono', monospace;
+    color: white;
+    width: 30%;
+    height: 30px;
+    box-shadow: -5px 5px rgb(0 0 0 / 55%);
+    border-radius: 0px 5px 0 5px;
+}
+
+
+#id_is_teamleader {
+    width: 30px;
+    height: 15px;
+    margin-top:-25px;
+    box-shadow: none;
+}
+#id_is_manager {
+    width: 30px;
+    height: 15px;
+    margin-top:-25px;
+    box-shadow: none;
+}
+#id_is_employer {
+    width: 30px;
+    height: 15px;
+    margin-top:-25px;
+    box-shadow: none;
+}
+h2{
+  font-size: 10px;
+  color: red;
+  position: absolute;
+  top: 85%;
+  left: 30%;
+}
+
+}
+
+@media only screen
+and (min-width: 1030px)
+and (max-width: 1366px) {
+    body {
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .container {
+        width: 130%;
+        height: 700px;
+        background-color: white;
+        overflow: hidden;
+    }
+
+    .video {
+        min-width: 300px;
+        max-width: 1366px;
+        overflow: hidden;
+    }
+
+    .signup-container {
+        width: 350px;
+        height: 540px;
+        background-color: rgba(150, 152, 153, 0.6);
+        position: absolute;
+        border: 5px solid rgba(0, 170, 255, 0.3);
+        top: 5%;
+        left: 40%;
+        backdrop-filter: blur(4px);
+        overflow: hidden;
+
+    }
+
+    .triangle1 {
+        width: 0;
+        height: 0;
+        border-bottom: 50px solid #00B7F1;
+        border-left: 50px solid transparent;
+        margin-left: 87.5%;
+        margin-top: 126%;
+
+
+    }
+    a {
+    position: absolute;
+    bottom: -44px;
+    background-color: rgba(217, 217, 217, 0);
+    box-shadow: none;
+    font-family: 'Overpass Mono', monospace;
+    font-size: 15px;
+    color: red;
+    left: 55%;
+}
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% static 'css/register.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=no"/>
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    <meta charset="UTF-8">
+    <title>Register-page</title>
+</head>
+<body>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="container">
+        <div class="video">
+            <video src="{% static 'videos/b3.mp4' %}" muted autoplay loop width="100%" height="100%"></video>
+        </div>
+
+
+
+    <div class="signup-container">
+                    <form method="POST" action="" autocomplete="off">
+                        {% csrf_token %}
+                            <h1>Register</h1>
+                            <label>{{form.username.label}}</label>
+                             {{form.username}}
+                            <label>{{form.password1.label}}</label>
+                              {{form.password1}}
+                        <label>{{form.password2.label}}</label>
+                              {{form.password2}}
+                            <label>Teamleader</label>
+                              {{form.is_teamleader}}
+                            <label>Manager</label>
+                              {{form.is_manager}}
+                            <label>Employer</label>
+                              {{form.is_employer}}
+                        <h2>* please select one department</h2>
+                        <button type="submit" value="save">Register</button>
+                    </form>
+            <div class="login">
+                <label>I do have an account</label>
+                <a href="{% url 'login-page' %}" class="m1-1">Login</a>
+            </div>
+    </div>
+
+
+</div>
+
+</body>
+</html>

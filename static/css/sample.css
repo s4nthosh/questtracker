@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&family=Luxurious+Script&family=M+PLUS+1&family=Merienda&family=Noto+Nastaliq+Urdu&family=Overpass+Mono&display=swap');
+body{
+  margin: 0;
+  background-color: black;
+  overflow: hidden;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  overflow: hidden;
+}
+
+.login-container{
+  width: 400px;
+  height: 600px;
+  background-color: rgba(150, 152, 153, 0.6);
+  position: absolute;
+  border:5px solid rgba(0, 170, 255, 0.3);
+  top: 20%;
+  left: 40%;
+  backdrop-filter:blur(4px);
+
+}
+
+.signup {
+    position: relative;
+    top: 40%;
+    left: 30%;
+}
+.signup label{
+   position:absolute;
+   height:0;
+   margin:-10px;
+   top:69px;
+   display:block;
+   color:black;
+   font-family: 'Overpass Mono', monospace;
+}
+a {
+    position:absolute;
+    bottom:-78px;
+    background-color:rgba(217, 217, 217, 0);
+    box-shadow: none;
+    font-family: 'Overpass Mono', monospace;
+    font-size:15px;
+    color:red;
+    margin-left:210px;
+
+}
+
+.triangle{
+      width: 0;
+      height: 0;
+      border-top: 50px solid #00B7F1;
+      border-right: 50px solid transparent;
+
+}
+.triangle1{
+  width: 0;
+  height: 0;
+  border-bottom: 50px solid #00B7F1;
+  border-left: 50px solid transparent;
+  margin-left: 87.5%;
+  margin-top: 125%;
+
+}
+
+h1{
+  font-family: 'Overpass Mono', monospace;
+  font-size: 30px;
+  color: #2D19AD;
+
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  text-shadow: 0px 10px 10px rgba(0, 0, 0, 1.55);
+}
+
+form{
+    position:relative;
+    width:80%
+
+}
+
+
+.u-p{
+  position: absolute;
+  top: 15%
+}
+
+
+label{
+  top: 90px;
+  position: relative;
+  display: block;
+  margin: 30px;
+  font-family: 'Overpass Mono', monospace;
+  font-size: 15px;
+  color: #2446BF;
+
+}
+
+input{
+    background-color: #70D6DD;
+    float: right;
+    clear: both;
+    outline: none;
+    margin: 0px 0px;
+    padding: 15px 10px;
+    width: 80%;
+    height: 0px;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    display: block;
+    left: 55%;
+    top: 30px;
+    position: relative;
+    box-shadow: 0px 10px rgb(0 0 0 / 25%);
+}
+
+button {
+    margin-top: 100px;
+    background-color: green;
+    border: none;
+    position: relative;
+    left: 70%;
+    font-family: 'Overpass Mono', monospace;
+    color: white;
+    width: 50%;
+    height: 50px;
+    box-shadow: -5px 5px rgb(0 0 0 / 55%);
+    border-radius: 0px 5px 0 5px;
+}
+
+
+
+/*moblie*/
+@media only screen
+and (min-width: 320px)
+and (max-width: 999px)
+{
+    body{
+        margin: 0;
+        overflow:hidden;
+    }
+    .container{
+        width: 1020%;
+        height: 100%;
+        background-color: white;
+        overflow: hidden;
+    }
+    .video{
+        min-width: 300px;
+        max-width: 1800px;
+        overflow:hidden;
+    }
+    .login-container{
+        width: 250px;
+        height: 400px;
+        background-color: rgba(150, 152, 153, 0.6);
+        position: absolute;
+        border:5px solid rgba(0, 170, 255, 0.3);
+        top: 25%;
+        left: 15%;
+        backdrop-filter:blur(4px);
+        overflow: hidden;
+
+    }
+    .triangle1{
+        width: 0;
+        height: 0;
+        border-bottom: 50px solid #00B7F1;
+        border-left: 50px solid transparent;
+        margin-left: 83.5%;
+        margin-top: 120%;
+
+    }
+
+
+.signup {
+    position: relative;
+    top: 40%;
+    left: 30%;
+}
+.signup label{
+   position:absolute;
+   height:0;
+   margin:-10px;
+   top:69px;
+   display:block;
+   color:black;
+   font-family: 'Overpass Mono', monospace;
+}
+a {
+    position:absolute;
+    bottom:-71px;
+    background-color:rgba(217, 217, 217, 0);
+    box-shadow: none;
+    font-family: 'Overpass Mono', monospace;
+    font-size:10px;
+    color:red;
+    margin-left:140px;
+
+}
+h1{
+  font-family: 'Overpass Mono', monospace;
+  font-size: 15px;
+  color: #2D19AD;
+
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  text-shadow: 0px 10px 10px rgba(0, 0, 0, 1.55);
+}
+
+form{
+    position:relative;
+    width:80%
+
+}
+
+.u-p{
+  position: absolute;
+}
+
+
+label{
+  top: 50px;
+  position: relative;
+  display: block;
+  margin: 30px;
+  font-family: 'Overpass Mono', monospace;
+  font-size: 10px;
+  color: #2446BF;
+
+}
+
+input{
+    background-color: #70D6DD;
+    float: right;
+    clear: both;
+    outline: none;
+    margin: 0px 0px;
+    padding: 15px 10px;
+    width: 120px;
+    height: 0px;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    display: block;
+    left: 55%;
+    top: -5px;
+    position: relative;
+    box-shadow: 0px 10px rgb(0 0 0 / 25%);
+}
+
+button {
+    margin-top: 30px;
+    background-color: green;
+    border: none;
+    position: relative;
+    left: 70%;
+    font-family: 'Overpass Mono', monospace;
+    color: white;
+    width: 35%;
+    height: 30px;
+    box-shadow: -5px 5px rgb(0 0 0 / 55%);
+    border-radius: 0px 5px 0 5px;
+}
+}
+
+/*small display*/
+
+@media only screen
+and (min-width: 1030px)
+and (max-width: 1366px) {
+    body {
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .container {
+        width: 130%;
+        height: 700px;
+        background-color: white;
+        overflow: hidden;
+    }
+
+    .video {
+        min-width: 300px;
+        max-width: 1366px;
+        overflow: hidden;
+    }
+
+    .login-container {
+        width: 350px;
+        height: 540px;
+        background-color: rgba(150, 152, 153, 0.6);
+        position: absolute;
+        border: 5px solid rgba(0, 170, 255, 0.3);
+        top: 5%;
+        left: 40%;
+        backdrop-filter: blur(4px);
+        overflow: hidden;
+
+    }
+
+    .triangle1 {
+        width: 0;
+        height: 0;
+        border-bottom: 50px solid #00B7F1;
+        border-left: 50px solid transparent;
+        margin-left: 87.5%;
+        margin-top: 126%;
+
+    }
+}
